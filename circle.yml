@@ -1,0 +1,12 @@
+machine:
+  environment:
+    DOWNSTREAM: hackreactor/shortly-deploy
+dependencies:
+  pre:
+    - npm install -g reactorcore/problemify
+    - git clone git@github.com:reactorcore/utils.scripts.git ../scripts
+deployment:
+  master:
+    branch: master
+    commands:
+      - ../scripts/circle-ci/deploy/publish-to-hackreactor.sh
