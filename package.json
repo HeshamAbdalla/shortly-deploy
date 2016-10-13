@@ -9,7 +9,7 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "grunt build && grunt upload",
     "test": "grunt test",
     "lint": "eslint ./"
   },
