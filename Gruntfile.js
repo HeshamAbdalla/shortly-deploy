@@ -77,7 +77,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
-
+      'nodemon'
   ]);
 
   grunt.registerTask('upload', function(n) {
